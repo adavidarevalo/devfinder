@@ -8,11 +8,13 @@
     box-shadow: 2px 2px 12px 1px rgba(0, 0, 0, 0.2);
     .Main-Avatar{
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
+        padding-inline: 10px;
         img{
             width: 80px;
             height: 80px;
             border-radius: 50%;
+            margin-right: 25px;
         }
         div{
             h2{
@@ -48,15 +50,4 @@
             color: rgb(59, 59, 59);
         }
     }
-    @media (min-width: 600px) {
-        .Main-Avatar{
-            justify-content: flex-start;
-            padding-inline: 10px;
-            img{
-                margin-right: 25px;
-            }
-        }
-    }
 }
-
-//justify-content: center;

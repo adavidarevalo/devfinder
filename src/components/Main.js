@@ -2,7 +2,7 @@ import React, {useContext} from 'react'
 import generalContext from '../context/generalContext'
 import Information from "./Information"
 import SocialInformation from "./SocialInformation"
-
+import DayJS from "react-dayjs";
 
 const Main = () => {
     const {DataApi, backgroundColor} = useContext(generalContext)
@@ -14,6 +14,7 @@ const Main = () => {
         created_at,
         bio
     } = DataApi
+
     return(
         <div className={`Main-Container ${backgroundColor ? 'Change-color': null} `}>
             <div className='Main-Avatar'>
@@ -21,7 +22,7 @@ const Main = () => {
                 <div>
                     <h2>{name ? name :login}</h2>
                     <p className="Main-login">@{login}</p>
-                    <p>{created_at}</p>
+                    <p><DayJS format="D MMM YYYY">{created_at}</DayJS></p>
                 </div>
             </div>
             <p className="BioParagraph">{bio ? bio :'This profile has no bio' }</p>
