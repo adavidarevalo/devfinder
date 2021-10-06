@@ -1,0 +1,35 @@
+header{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 25px 10px;
+    div{
+        button{
+            background: none;
+            border: none;
+            p{
+                display: flex;
+                align-items: center;
+                text-transform: uppercase;
+                font-size: 1rem;
+                letter-spacing: 1px;
+                font-weight: 600;
+                margin: 0px;
+                color: white;
+                img{
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+    &.Sun{
+        img{
+            filter: invert(1);
+        }
+        div > button > p {
+            color: black;
+        }
+    }
+}

@@ -1,0 +1,39 @@
+.SearchContainer{
+    background: #1D2A47;
+    border-radius: 10px;
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10px;
+    box-shadow: 2px 2px 12px 1px rgba(0, 0, 0, 0.2);
+    img{
+        width: 20px;
+        height: 20px;
+    }
+    input{
+        background: none;
+        outline: none;
+        border: none;
+        color: white;
+    }
+    button{
+        background: #0179FF;
+        border: none;
+        color: white;
+        font-size: 1rem;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    &.changeBackground{
+        background: white;
+    }
+}
+.ErrorContainer{
+    color: #ce0000;
+    text-align: center;
+    font-size: 1.1rem;
+    width: 80%;
+    margin: 0 auto;
+}

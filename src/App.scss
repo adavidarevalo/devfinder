@@ -1,0 +1,13 @@
+$first-color: #ffffff;
+$color-white: #ffffff;
+section{
+  height: 100vh;
+}
+.PageLight{
+  $first-color: #141D2F;
+  $color-white: #ffffff;
+  background: $first-color;
+}
+.pageDark{
+  background: #F5F8FE;
+}
