@@ -4,6 +4,7 @@ import iconWebsite from '../assets/images/iconWebsite.svg'
 import iconTwitter from '../assets/images/iconTwitter.svg'
 import iconLocation from '../assets/images/iconLocation.svg'
 import iconCompany from '../assets/images/iconCompany.svg'
+import '../styles/components/Main.scss'
 
 const Main = () => {
     const {DataApi} = useContext(generalContext)
@@ -23,11 +24,11 @@ const Main = () => {
         company
     } = DataApi
     return(
-        <div>
-            <div>
+        <div className='Main-Container'>
+            <div className='Main-Avatar'>
                 <img src={avatar_url} alt='Avatar'/>
                 <div>
-                    <h2>{name}</h2>
+                    <h2>{name ? name :login}</h2>
                     <p>@{login}</p>
                     <p>{created_at}</p>
                 </div>
