@@ -1,13 +1,28 @@
-$first-color: #ffffff;
+$first-color: #141D2F;
+$second-color: #1D2A47;
 $color-white: #ffffff;
+h1, h2, h3, p {
+  margin: 0px;
+}
 section{
-  height: 100vh;
+  min-height: 100vh;
+  padding-bottom: 30px;
+}
+.pageDark{
+  background: #F5F8FE;
+  $first-color: #FEFEFE;
+  $second-color: #1D2A47;
 }
 .PageLight{
   $first-color: #141D2F;
   $color-white: #ffffff;
+  $second-color: white;
   background: $first-color;
 }
-.pageDark{
-  background: #F5F8FE;
-}
+@import "./styles/components/_Header.scss";
+@import "./styles/components/_Search.scss";
+@import "./styles/components/_Main.scss";
+@import "./styles/components/_Information.scss";
+@import "./styles/components/_Loading.scss";
+@import "./styles/components/_SocialInformation.scss";
+

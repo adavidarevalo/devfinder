@@ -1,5 +1,4 @@
 import React from 'react'
-import '../styles/components/Loading.scss'
 
 const Loading = () => {
     return(

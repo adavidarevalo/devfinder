@@ -1,7 +1,6 @@
 import React, {useContext, useState} from 'react'
 import generalContext from '../context/generalContext'
 import iconSearch from '../assets/images/iconSearch.svg'
-import '../styles/components/Search.scss'
 
 const Search = () =>{
     const [inputInformation, setInputInformation] = useState('')
@@ -16,6 +15,7 @@ const Search = () =>{
             return 
         }
         searchUserName(inputInformation)
+        setInputInformation("")
     }
     return(
         <>
@@ -23,6 +23,7 @@ const Search = () =>{
             <img src={iconSearch} alt='magnifying Glass'/>
             <input 
             type='text' 
+            value={inputInformation}
             placeholder='Search Github username...' 
             onChange={(e)=> setInputInformation(e.target.value)}/>
             <button

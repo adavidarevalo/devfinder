@@ -22,7 +22,9 @@ export default (state, action) => {
         case Loading_API: 
             return{
                 ...state,
-                loading: true
+                loading: true,
+                DataApi: false,
+                errorApi: false
             }
         case Data_API:
             return{

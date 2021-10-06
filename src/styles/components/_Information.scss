@@ -1,0 +1,32 @@
+.information-container{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    background: $first-color;
+    color: $color-white; 
+    justify-content: space-between;
+    padding: 10px 15px;
+    border-radius: 10px;
+    div{
+        h3{
+            font-size: 1rem;
+            font-weight: 400;
+        }
+        p{
+            text-align: center;
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+    }
+    &.Change-color{
+        background: #F6F8FF;
+        div{
+            h3{
+                color: rgb(59, 59, 59);
+            }
+            p{
+                color: black
+            }
+        }
+    }
+}

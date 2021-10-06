@@ -3,7 +3,6 @@ import generalContext from '../context/generalContext'
 import logo from '../assets/images/logo.svg'
 import iconSun from '../assets/images/iconSun.svg'
 import iconMoon from '../assets/images/iconMoon.svg'
-import '../styles/components/Header.scss'
 
 const Header = () => {
     const {backgroundColor, changeBackgroundColor} = useContext(generalContext)

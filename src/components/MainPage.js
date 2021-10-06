@@ -11,6 +11,7 @@ const MainPage = () =>{
     loading,
     DataApi
   } = useContext(generalContext)
+  console.log("lOADING", loading)
     return(
     <section className={backgroundColor? 'pageDark' : 'PageLight'}>
       <Header/>

@@ -1,0 +1,62 @@
+.Main-Container{
+    width: 80%;
+    max-width: 500px;
+    margin: 0 auto;
+    background: $second-color;
+    border-radius: 10px;
+    padding: 15px 10px;
+    box-shadow: 2px 2px 12px 1px rgba(0, 0, 0, 0.2);
+    .Main-Avatar{
+        display: flex;
+        justify-content: space-between;
+        img{
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
+        div{
+            h2{
+                color: white;
+            }
+            .Main-login{
+                color: #0079ff;
+            }
+        }
+    }
+    .BioParagraph{
+        text-align: center;
+        color: white;
+        font-size: 1.2rem;
+        margin-block: 15px;
+    }
+    &.Change-color{
+        background: white;
+        .Main-Avatar{
+            div{
+                h2{
+                    color: rgb(32, 32, 32);
+                }
+                p{
+                    color: rgb(59, 59, 59);
+                }
+                .Main-login{
+                    color: #0079ff;
+                }
+            }
+        }
+        .BioParagraph{
+            color: rgb(59, 59, 59);
+        }
+    }
+    @media (min-width: 600px) {
+        .Main-Avatar{
+            justify-content: flex-start;
+            padding-inline: 10px;
+            img{
+                margin-right: 25px;
+            }
+        }
+    }
+}
+
+//justify-content: center;

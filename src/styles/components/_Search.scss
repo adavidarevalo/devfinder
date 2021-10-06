@@ -1,7 +1,8 @@
 .SearchContainer{
-    background: #1D2A47;
+    background: $first-color;
     border-radius: 10px;
     width: 80%;
+    max-width: 500px;
     margin: 20px auto;
     display: flex;
     justify-content: space-between;
@@ -17,6 +18,9 @@
         outline: none;
         border: none;
         color: white;
+        padding-inline: 15px;
+        font-size: 1.2rem;
+        width: 80%;
     }
     button{
         background: #0179FF;
@@ -26,9 +30,12 @@
         padding: 10px;
         border-radius: 10px;
     }
-    &.changeBackground{
+     &.changeBackground{
         background: white;
-    }
+        input{
+            color: black;
+        }
+    } 
 }
 .ErrorContainer{
     color: #ce0000;
