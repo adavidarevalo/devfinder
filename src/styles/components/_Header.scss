@@ -6,6 +6,7 @@ header{
     align-items: center;
     padding-block: 25px 10px;
     max-width: 500px;
+    animation: fadeInDown 1s both;
     div{
         button{
             background: none;
@@ -34,3 +35,15 @@ header{
         }
     }
 }
+@keyframes fadeInDown {
+    0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    }
+    100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+    }
+    } 
